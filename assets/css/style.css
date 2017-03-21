@@ -1,21 +1,6 @@
 ﻿
-/*=============================================================
-    Authour URI: www.binarytheme.com
-    License: Commons Attribution 3.0
-
-    http://creativecommons.org/licenses/by/3.0/
-
-    100% Free To use For Personal And Commercial Use.
-    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
-    ========================================================  */
-
-/* =============================================================
-   GENERAL STYLES
- ============================================================ */
-
 body {
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size:20px;
 }
 
@@ -34,7 +19,7 @@ h1,h2,h4 {
     text-align:center;
     text-transform:uppercase;
     font-size:30px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Open Sans', sans-serif;
 }
 .pad-set {
     padding-top:50px;
@@ -53,7 +38,7 @@ h1,h2,h4 {
     font-size:20px;
 }
 #menu-top a {
-    color:#EEEEEE;
+    color:#0570B0;
     text-decoration:none;
     font-family: 'Open Sans', sans-serif;
     font-weight:500;
@@ -64,15 +49,15 @@ h1,h2,h4 {
 
 }
 .menu-section {
-    background-color: #0570B0;
-    border-bottom:5px solid #CECECE;
+    background-color: #FBFBFB;
+    border-bottom:5px solid #0570B0;
     width:100%
 }
 .menu-top-active {
-    background-color:#a6bddb;
+    background-color:#FBFBFB;
 }
 .navbar-inverse {
-background-color: #a6bddb;
+background-color: #FBFBFB;
 border-color: rgba(155, 153, 153, 0.23);
 
 }
@@ -191,7 +176,7 @@ min-height: 300px;
 .footer-sec {
     margin-top:50px;
     padding-top:30px;
-    color:#fff;
+    color:#ffffff;
     background:#0570B0;
     padding-bottom:20px;
     
@@ -203,7 +188,7 @@ min-height: 300px;
     box-shadow: 0 0px 0px rgba(0,0,0,0);
 }
 .social-div a,a:hover{
-    color:#fff;
+    color:#ffffff;
     text-decoration:none;
 }
 .set-about-img {
@@ -234,7 +219,7 @@ min-height: 300px;
     width: 100%;
   height: 100%;
   opacity: 0;
-  background-color: #CECECE;
+  background-color: #FBFBFB;
   text-align: center;
   vertical-align: middle;
   -webkit-transition: opacity 300ms;
