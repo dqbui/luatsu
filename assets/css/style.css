@@ -180,6 +180,14 @@ border: 1px solid black;
     .below-slideshow p {
         padding-right:30px;
     }
+
+
+.word-content {
+    color:black;
+    background:#e1e1e1;
+    padding-bottom:50px;
+}
+
 .tag-home {
     padding-top:50px;
     padding-bottom:30px;
