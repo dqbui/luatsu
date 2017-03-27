@@ -391,7 +391,7 @@ a:hover {
 }
 
 .form {
-  background: #6D929B;
+  background: #fff;
   padding: 40px;
   max-width: 600px;
   margin: 40px auto;
@@ -425,12 +425,12 @@ a:hover {
   transition: .5s ease;
 }
 .tab-group li a:hover {
-  background: #1ab188;
-  color: #ffffff;
+  background: #e1e1e1;
+  color: #0d2158;
 }
 .tab-group .active a {
-  background:  #1ab188 ;
-  color: #ffffff;
+  background:  #e1e1e1 ;
+  color: #0d2158;
 }
 
 .tab-content > div:last-child {
@@ -449,7 +449,7 @@ label {
   -webkit-transform: translateY(6px);
           transform: translateY(6px);
   left: 13px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #0d2158;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   -webkit-backface-visibility: hidden;
@@ -458,7 +458,7 @@ label {
 }
 label .req {
   margin: 2px;
-  color: #ffffff;
+  color: #0d2158;
 }
 
 label.active {
@@ -527,8 +527,8 @@ textarea {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
-  background: #6D929B;
-  color: #ffffff;
+  background: #e1e1e1;
+  color: #0570B0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-appearance: none;
