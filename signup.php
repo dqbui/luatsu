@@ -61,7 +61,7 @@
       <!-- BELOW SLIDESHOW SECTION END-->
 
 
-      <h3 style="color:#0d2158;" align="center">Welcome back!</h3>
+      <h3 style="color:#0d2158;" align="center">Sign Up to Talk to a Lawyer</h3>
       <div class="form">
 
         <div class="tab-content">
@@ -73,8 +73,28 @@
             }
             </style>
 
-            <form action="/" method="post">      
-              
+            <form action="/" method="post">
+
+              <div class="top-row">
+                <div class="field-wrap">
+                    First Name <br>
+                    <input type="text" placeholder= "Enter first name"  name="firstname" required>
+                </div>
+
+                <div class="field-wrap">
+                    Last Name <br> 
+                    <input type="text" placeholder="Enter last name" name="lastname" required>
+                </div>
+              </div>
+                
+              <div class="field-wrap">
+                  Gender <br>
+                  <input id="female" type="radio" name="gender" value="female">
+                  <label for="female"> Female </label>
+                  <input id="male" type="radio" name="gender" value="male">
+                  <label for="male"> Male </label>
+              </div>
+
                 <div class="field-wrap">
                     Email Address <br>
                     <input type="email" placeholder= "Enter email" name="email" required>
@@ -85,13 +105,12 @@
                   <input type="password" placeholder="Enter password" name="pwd" required>
               </div>
 
-              <button type="submit" class="button button-block"/>Log In</button>
+              <button type="submit" class="button button-block"/>Get Started</button>
             </form>
 
-</div>
+          </div>
 
           <div id="login">   
-          
           </div>
 
         </div><!-- tab-content -->
