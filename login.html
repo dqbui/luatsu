@@ -33,7 +33,7 @@
               <div class="col-md-12">
                 <div class="navbar-collapse collapse ">
 
-                  <img src="assets/img/logo.jpg" alt="logo" style="width:200px;height:70px;">
+                    <img src="assets/img/logo.jpg" alt="logo" style="width:200px;height:70px;"> </img>
 
                   <ul id="menu-top" class="nav navbar-nav navbar-right">
                    <li><a href="index.html" class="menu-top-active" >HOME</a></li>
@@ -81,36 +81,35 @@
 
               <div class="top-row">
                 <div class="field-wrap">
-                  <label>
-                    First Name<span class="req">*</span>
-                  </label>
-                  <input type="text" required autocomplete="off" />
+                    First Name <br>
+                    <input type="text" placeholder= "Enter first name"  name="firstname" required>
                 </div>
 
                 <div class="field-wrap">
-                  <label>
-                    Last Name<span class="req">*</span>
-                  </label>
-                  <input type="text"required autocomplete="off"/>
+                    Last Name <br> 
+                    <input type="text" placeholder="Enter last name" name="lastname" required>
                 </div>
               </div>
-
+                
               <div class="field-wrap">
-                <label>
-                  Email Address<span class="req">*</span>
-                </label>
-                <input type="email"required autocomplete="off"/>
+                  Gender <br>
+                  <input id="female" type="radio" name="gender" value="female">
+                  <label for="female"> Female </label>
+                  <input id="male" type="radio" name="gender" value="male">
+                  <label for="male"> Male </label>
+              </div>
+
+                <div class="field-wrap">
+                    Email Address <br>
+                    <input type="email" placeholder= "Enter email" name="email" required>
               </div>
 
               <div class="field-wrap">
-                <label>
-                  Set A Password<span class="req">*</span>
-                </label>
-                <input type="password"required autocomplete="off"/>
+                  Password <br> 
+                  <input type="password" placeholder="Enter password" name="pwd" required>
               </div>
 
               <button type="submit" class="button button-block"/>Get Started</button>
-
             </form>
 
           </div>
