@@ -16,7 +16,7 @@ apt-get install git #install git
 mkdir /var/www/html
 chown -R mupisiri:mupisiri /var/www/html #change the html directory to be owned by mupisiri
 cd /var/www/html #move to the html directory
-git clone https://github.com/bazilm16/clouzine.git #clone the git repository
+git clone https://github.com/linhpha/Lawyer-App-Reupload.git #clone the git repository
 ssh-keygen #generate an ssh key which you will copy to your Github for passwordless pulling
 #after setting the origin, copy the contents of the public rsa key to the server
 cd clouzine/ #get into the clouzine repository
