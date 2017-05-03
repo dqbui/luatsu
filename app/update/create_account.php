@@ -13,18 +13,17 @@ require_once dirname(__FILE__).'/../rsc/classes/User.php';
 $user = new User();
 
 if(isset($_POST["firstname"]) && isset($_POST["lastname"]) && isset($_POST["email"])
-  && isset($_POST["pwd"]) && isset($_POST["gender"])) {
+  && isset($_POST["pwd"]) && isset($_POST["sex"])) {
 
   $user->setFirstName($_POST["firstname"]);
   $user->setLastName($_POST["lastname"]);
   $user->setEmail($_POST["email"]);
   $user->setPassword($_POST["pwd"]);
-  $user->setSex($_POST["gender"]);
+  $user->setSex($_POST["sex"]);
   $user->createAccount();
   $user->setLoadParams(["firstName", "LastName", "email", "dateJoined"]);
   $user->load();
   echo json_encode($user->toArray());
-  header('Location: http://www.luatsu.com');
 } else {
 
 }
