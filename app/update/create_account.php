@@ -31,5 +31,6 @@ if(isset($_POST["firstname"]) && isset($_POST["lastname"]) && isset($_POST["emai
     header("Location: /login.html?msg={$msg}");
   }
 } else {
-  echo json_encode(["status"=>"failure", "message"=>"missing variables"]);
+  $msg = "You+are+missing+some+parameters";
+  header("Location: /signup.html?msg={$msg}");
 }
