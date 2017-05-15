@@ -21,7 +21,7 @@ if(isset($_GET["type"]) && isset($_GET["count"])) {
   );
 } else {
   echo json_encode(
-    ["status"=>"failure", "payload"=>$users->toArray(),"message"=>"missing one or all of the get parameters"]
+    ["status"=>"failure", "payload"=>[],"message"=>"missing one or all of the get parameters"]
   );
 }
 
