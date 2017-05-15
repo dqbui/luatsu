@@ -11,13 +11,44 @@ declare(strict_types=1);
 
 
 
-class Lawyers {
+class Users {
 
   private $lawyers;
-  private $type = "lawyer";
+  private $type;
+  private $count;
 
   public function __construct() {
     $this->lawyers = [];
+    $this->type = "lawyer";
+    $this->count = 10;
+  }
+
+  /**
+   * @return int
+   */
+  public function getCount(): int {
+    return $this->count;
+  }
+
+  /**
+   * @param int $count
+   */
+  public function setCount(int $count) {
+    $this->count = $count;
+  }
+
+  /**
+   * @return string
+   */
+  public function getType(): string {
+    return $this->type;
+  }
+
+  /**
+   * @param string $type
+   */
+  public function setType(string $type) {
+    $this->type = $type;
   }
 
   /**
@@ -73,6 +104,10 @@ class Lawyers {
       }//catch
     }
   }//load
+
+  function dumm(){
+    echo "dum";
+  }
 
   /**
    * converts the array of user objects to an associative array recursively
