@@ -4,8 +4,6 @@
 
 **`Parameters`** _(all of them are required)_
 
-_You should do these requests asynchronously via ajax and the API it is a post request_
-
 **firstname**: The string for the first name of the user
 
 **lastname**: A string for the last name of the user

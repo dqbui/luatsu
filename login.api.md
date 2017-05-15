@@ -4,8 +4,6 @@
 
 **`Parameters`** _(all of them are required)_
 
-_You should do these requests asynchronously via ajax and the API it is a post request_
-
 **email**: A string for the email of the user
 
 **password**: A string for the password of the user
