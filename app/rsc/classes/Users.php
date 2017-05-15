@@ -105,6 +105,10 @@ class Users {
     }
   }//load
 
+  function dumm(){
+    echo "dum";
+  }
+
   /**
    * converts the array of user objects to an associative array recursively
    */
