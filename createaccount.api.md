@@ -18,12 +18,8 @@ _You should do these requests asynchronously via ajax and the API it is a post r
 
 There is no response, the user is then logged in once the account is successfully created
 
-If the account is not successfully created, you will get a json string with the response which 
-you can then deal with which is the following:
->{
-    "status":"failure",
-    "message":"some message that resulted in the failure"
-}
+If the account is not successfully created, the user will be returned to the home page with an 
+error message embedded in the url
 
 If there is an internal server error, you will get nothing but the server will silently fail and 
 you could possibly get a file 500 error in the javascript console
