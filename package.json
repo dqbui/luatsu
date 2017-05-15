@@ -1,0 +1,15 @@
+{
+  "status":"success",
+  "payload":[
+    {
+      "id":"7",
+      "firstName":"bazil",
+      "lastName":"Mupisiri",
+      "sex":"male",
+      "email":"bazil@bazil.com",
+      "dateOfBirth":"1490911341",
+      "dateJoined":"1490911341"
+    }
+  ],
+  "message":"none"
+}
