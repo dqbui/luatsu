@@ -1,26 +1,20 @@
-**`API Documentation for a user creating a new account`**
+**`API Documentation for logging in a user`**
 
-> domain/app/update/create_account.php
+> domain/app/update/login.php
 
 **`Parameters`** _(all of them are required)_
 
 _You should do these requests asynchronously via ajax and the API it is a post request_
 
-**firstname**: The string for the first name of the user
-
-**lastname**: A string for the last name of the user
-
 **email**: A string for the email of the user
 
 **password**: A string for the password of the user
 
-**sex**: A string for the sex of the user
-
 **`Response`** 
 
-There is no response, the user is then logged in once the account is successfully created
+There is no response, the user is then logged in once the account verification is successful
 
-If the account is not successfully created, the user will be returned to the sign up page with an 
+If the account verification is not successful, the user will be returned to the login page with an 
 error message embedded in the url
 
 If there is an internal server error, you will get nothing but the server will silently fail and 
