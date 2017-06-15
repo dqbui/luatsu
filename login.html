@@ -26,6 +26,16 @@
   </head>
   <body>
     <!-- LOGO HEADER END-->
+    <section>
+      <div class="container">
+        <div class="col-sm-12">
+          <ul id="language-option" class="nav navbar-nav navbar-right">
+            <li id="english"><a href="index.html">English</a></li>
+            <li id="vietnamese"><a href="index-vietnamese.html">Vietnamese</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section class="menu-section">
       <div class="container">
         <div class="row">
