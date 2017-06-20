@@ -84,7 +84,7 @@
           <div class="container">
             <div class="row text-center">
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <h4> <strong>About TimLuatSu</strong> </h3>
+                <h4> <strong><a href="aboutus.html"> About Luatsu.tech </a></strong> </h3>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <h4> <strong>Support your lawyer</strong> </h3>
