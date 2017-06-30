@@ -86,10 +86,11 @@
             
             <div class="field-wrap">
               Gender <br>
-              <input id="female" type="radio" name="gender" value="female">
-              <label for="female"> Female </label>
-              <input id="male" type="radio" name="gender" value="male">
-              <label for="male"> Male </label>
+              <select name="example">
+                <option disabled selected value> -- Select an option -- </option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
             </div>
             <div class="field-wrap">
               Email Address <br>

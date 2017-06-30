@@ -193,9 +193,11 @@ border: 1px solid black;
         max-width:340px;
         padding:15px 25px;
         
-
-
     }
+
+  input[type="radio"]{
+    -webkit-appearance: radio;
+  }  
  /* =============================================================
     PAGE STYLES
  ============================================================ */
@@ -574,6 +576,11 @@ label {
   margin: 0;
 }
 
+input[type=checkbox]
+{
+  -webkit-appearance: checkbox;
+  border-radius: 0;
+}
 .button {
   border: 0;
   outline: none;
@@ -587,7 +594,7 @@ label {
   color: #0570B0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  -webkit-appearance: none;
+  /*-webkit-appearance: none;*/
 }
 .button:hover, .button:focus {
   background: #179b77;
