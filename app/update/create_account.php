@@ -16,6 +16,7 @@ if(isset($_POST["language"])) {
 
   $sign_up_page = strtolower($_POST["language"]) == "english" ? "/signup.html" : "/signup-vn.html";
   $login_page = strtolower($_POST["language"]) == "english" ? "/login.html" : "/login-vn.html";
+  $home_page = strtolower($_POST["language"]) == "english" ? "/" : "/index-vn.html";
 
   if (isset($_POST["firstname"]) && isset($_POST["lastname"]) && isset($_POST["email"])
     && isset($_POST["password"]) && isset($_POST["retype-password"]) && isset($_POST["sex"])) {
@@ -29,7 +30,7 @@ if(isset($_POST["language"])) {
       $user->createAccount();
       $user->login();
       if ($user->isLoggedIn()) {
-        header('Location: /');
+        header("Location: {$home_page}");
       } else {
         $msg = "invalid+email+username+combo";
         header("Location: {$login_page}?msg={$msg}");
