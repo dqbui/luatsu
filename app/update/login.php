@@ -12,18 +12,26 @@ session_start();
 
 require_once dirname(__FILE__).'/../rsc/classes/User.php';
 
-if(isset($_POST["email"]) && isset($_POST["password"])) {
-  $user = new User();
-  $user->setEmail($_POST["email"]);
-  $user->setPassword($_POST["password"]);
-  $user->login();
-  if($user->isLoggedIn()) {
-    header('Location: /');
+if(isset($_POST["language"])) {
+  $login_page = strtolower($_POST["language"]) == "english" ? "/login.html" : "/login-vn.html";
+  $home_page = strtolower($_POST["language"]) == "english" ? "/" : "/index-vn.html";
+  if(isset($_POST["email"]) && isset($_POST["password"])) {
+    $user = new User();
+    $user->setEmail($_POST["email"]);
+    $user->setPassword($_POST["password"]);
+    $user->login();
+    if($user->isLoggedIn()) {
+      header("Location: {$home_page}");
+    } else {
+      $msg = "invalid+email+username+combo";
+      header("Location: {$login_page}?msg={$msg}");
+    }
   } else {
-    $msg = "invalid+email+username+combo";
-    header("Location: /login.html?msg={$msg}");
+    $msg = "You+are+missing+either+the+email+or+the+username";
+    header("Location: {$login_page}?msg={$msg}");
   }
+
 } else {
-  $msg = "You+are+missing+either+the+email+or+the+username";
+  $msg = "You+are+missing+the+language+params";
   header("Location: /login.html?msg={$msg}");
 }
