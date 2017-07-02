@@ -63,6 +63,7 @@
           }
           </style>
           <form action="/" method="post">
+              <input type="hidden" name="language" value = "English">
             
             <div class="field-wrap">
               Email Address <br>
