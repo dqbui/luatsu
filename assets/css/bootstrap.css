@@ -128,7 +128,7 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button;
+  /*-webkit-appearance: button;*/
   cursor: pointer;
 }
 button[disabled],
@@ -162,7 +162,7 @@ input[type="search"] {
 }
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+  /*-webkit-appearance: none;*/
 }
 fieldset {
   padding: .35em .625em .75em;
@@ -2395,7 +2395,7 @@ textarea.form-control {
   height: auto;
 }
 input[type="search"] {
-  -webkit-appearance: none;
+  /*-webkit-appearance: none;*/
 }
 input[type="date"],
 input[type="time"],
@@ -3088,9 +3088,6 @@ input[type="button"].btn-block {
 }
 .fade.in {
   opacity: 1;
-}
-.collapse {
-  display: none;
 }
 .collapse.in {
   display: block;
@@ -5366,7 +5363,7 @@ a.list-group-item-danger.active:focus {
   opacity: .5;
 }
 button.close {
-  -webkit-appearance: none;
+  /*-webkit-appearance: none;*/
   padding: 0;
   cursor: pointer;
   background: transparent;
