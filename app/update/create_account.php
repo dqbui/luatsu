@@ -8,6 +8,9 @@
 
 declare(strict_types=1);
 
+session_start();
+session_destroy();
+
 require_once dirname(__FILE__).'/../rsc/classes/User.php';
 
 $user = new User();
