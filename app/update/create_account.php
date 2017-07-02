@@ -33,21 +33,22 @@ if(isset($_POST["language"])) {
       $user->createAccount();
       $user->login();
       if ($user->isLoggedIn()) {
-        header("Location: {$home_page}");
+        $msg = str_replace(" ", "+", "account successfully created");
+        header("Location: {$home_page}?msg={$msg}");
       } else {
-        $msg = "invalid+email+username+combo";
+        $msg = "invalid email username combo";
         header("Location: {$login_page}?msg={$msg}");
       }
     } else {
-      $msg = "retyped+password+is+not+the+same+as+the+actual+password";
+      $msg = "retyped password is not the same as the actual password";
       header("Location: {$sign_up_page}?msg={$msg}");
     }
   } else {
-    $msg = "You+are+missing+some+parameters";
+    $msg = "You are missing some parameters";
     header("Location: {$sign_up_page}?msg={$msg}");
   }
 
 } else {
-  $msg = "You+are+missing+the+language+params";
+  $msg = "You are missing the language params";
   header("Location: /signup.html?msg={$msg}");
 }
