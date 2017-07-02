@@ -65,10 +65,9 @@
     <!-- BELOW SLIDESHOW SECTION END-->
     <h3 style="color:#0d2158;" align="center">Đăng ký tài khoản để xin tư vấn</h3>
     <div class="form">
-     <input type="hidden" name="language" value="Norway">
+      
       <div class="tab-content">
         <div id="signup">
-
           <style>
           h2 {
           color: #0d2158;
@@ -77,6 +76,7 @@
           
           </style>
           <form action="/" method="post">
+            <input type="hidden" name="language" value = "Vietnamese">
             <div class="top-row">
               <div class="field-wrap">
                 First Name <br>
@@ -90,7 +90,7 @@
             
             <div class="field-wrap">
               Giới tính <br>
-              <select name="example">
+              <select name="sex">
                 <option disabled selected value> ---- </option>
                 <option value="Male">Nam</option>
                 <option value="Female">Nữ</option>
@@ -103,6 +103,10 @@
                 Mật khẩu <br>
                 <input type="password" placeholder="Điền mật khẩu" name="pwd" required>
               </div>
+               <div class="field-wrap">
+              Retype password <br>
+              <input type="password" placeholder="Go lai mat khau" name="pwd" required>
+            </div>
               <button type="submit" class="button button-block"/>Đăng ký</button>
             </form>
           </div>

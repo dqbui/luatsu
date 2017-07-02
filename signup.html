@@ -64,7 +64,7 @@
     <!-- BELOW SLIDESHOW SECTION END-->
     <h3 style="color:#0d2158;" align="center">Sign Up to Talk to a Lawyer</h3>
     <div class="form">
-      <input type="hidden" name="language" value="English">
+     
       <div class="tab-content">
         <div id="signup">
           <style>
@@ -74,6 +74,7 @@
           }
           </style>
           <form action="/app/update/create_account.php" method="post">
+           <input type="hidden" name="language" value="English">
             <div class="top-row">
               <div class="field-wrap">
                 First Name <br>
@@ -87,7 +88,7 @@
             
             <div class="field-wrap">
               Gender <br>
-              <select name="example">
+              <select name="sex">
                 <option disabled selected value> -- Select an option -- </option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
@@ -99,6 +100,10 @@
             </div>
             <div class="field-wrap">
               Password <br>
+              <input type="password" placeholder="Enter password" name="pwd" required>
+            </div>
+             <div class="field-wrap">
+              Retype Password <br>
               <input type="password" placeholder="Enter password" name="pwd" required>
             </div>
             <button type="submit" class="button button-block"/>Get Started</button>
