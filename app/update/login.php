@@ -13,8 +13,10 @@ session_start();
 require_once dirname(__FILE__).'/../rsc/classes/User.php';
 
 if(isset($_POST["language"])) {
+
   $login_page = strtolower($_POST["language"]) == "english" ? "/login.html" : "/login-vn.html";
   $home_page = strtolower($_POST["language"]) == "english" ? "/" : "/index-vn.html";
+
   if(isset($_POST["email"]) && isset($_POST["password"])) {
     $user = new User();
     $user->setEmail($_POST["email"]);
