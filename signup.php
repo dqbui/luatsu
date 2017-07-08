@@ -31,7 +31,7 @@
         <div class="col-sm-12">
           <ul id="language-option" class="nav navbar-nav navbar-right">
             <li id="english"><a href="index.html">English</a></li>
-            <li id="vietnamese"><a href="index-vietnamese.html">Vietnamese</a></li>
+            <li id="vietnamese"><a href="index-vn.html">Vietnamese</a></li>
           </ul>
         </div>
       </div>
@@ -44,7 +44,7 @@
               <img src="assets/img/logo.jpg" alt="logo" style="width:200px;height:70px;"> </img>
               <ul id="menu-top" class="nav navbar-nav navbar-right">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="blank.html" >LEGAL TOPICS</a></li>
+                <li><a href="blank.html" >HOW IT WORKS</a></li>
                 <li><a href="lawyer_profile.html">LAWYER DIRECTORY</a></li>
                 <li><a href="signup.html">SIGN UP</a></li>
                 <li><a href="login.html">LOG IN</a></li>
@@ -86,10 +86,11 @@
             
             <div class="field-wrap">
               Gender <br>
-              <input id="female" type="radio" name="gender" value="female">
-              <label for="female"> Female </label>
-              <input id="male" type="radio" name="gender" value="male">
-              <label for="male"> Male </label>
+              <select name="example">
+                <option disabled selected value> -- Select an option -- </option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
             </div>
             <div class="field-wrap">
               Email Address <br>

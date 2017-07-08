@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -31,8 +30,8 @@
       <div class="container">
         <div class="col-sm-12">
           <ul id="language-option" class="nav navbar-nav navbar-right">
-            <li id="english"><a href="index.html">Tiếng Anh</a></li>
-            <li id="vietnamese"><a href="index-vietnamese.html">Tiếng Việt</a></li>
+            <li id="english"><a href="index.html">English</a></li>
+            <li id="vietnamese"><a href="index-vn.html">Vietnamese</a></li>
           </ul>
         </div>
       </div>
@@ -44,11 +43,11 @@
             <div class="navbar-collapse collapse ">
               <img src="assets/img/logo.jpg" alt="logo" style="width:200px;height:70px;"> </img>
               <ul id="menu-top" class="nav navbar-nav navbar-right">
-                <li><a href="index-vietnamese.html" class="menu-top-active" >TRANG CHỦ</a></li>
-                <li><a href="blank-vietnamese.html" >CHỦ ĐỀ PHÁP LÍ</a></li>
-                <li><a href="lawyer_profile-vietnamese.html">DANH BẠ LUẬT SƯ</a></li>
-                <li><a href="signup-vietnamese.html">ĐĂNG KÝ</a></li>
-                <li><a href="login-vietnamese.html">ĐĂNG NHẬP</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="blank.html" >HOW IT WORKS</a></li>
+                <li><a href="lawyer_profile.html">LAWYER DIRECTORY</a></li>
+                <li><a href="signup.html">SIGN UP</a></li>
+                <li><a href="login.html">LOG IN</a></li>
               </ul>
             </div>
           </div>
@@ -63,7 +62,7 @@
       </div>
     </div>
     <!-- BELOW SLIDESHOW SECTION END-->
-    <h3 style="color:#0d2158;" align="center">Sign Up to Talk to a Lawyer</h3>
+    <h3 style="color:#0d2158;" align="center">Welcome back!</h3>
     <div class="form">
       <div class="tab-content">
         <div id="signup">
@@ -73,37 +72,22 @@
           text-align: right;
           }
           </style>
-          <form action="/" method="post">
-            <div class="top-row">
-              <div class="field-wrap">
-                First Name <br>
-                <input type="text" placeholder= "Enter first name"  name="firstname" required>
-              </div>
-              <div class="field-wrap">
-                Last Name <br>
-                <input type="text" placeholder="Enter last name" name="lastname" required>
-              </div>
-            </div>
-            
-            <div class="field-wrap">
-              Gender <br>
-              <input id="female" type="radio" name="gender" value="female">
-              <label for="female"> Female </label>
-              <input id="male" type="radio" name="gender" value="male">
-              <label for="male"> Male </label>
-            </div>
+          <form action="/app/update/login.php" method="post">
+            <input type="hidden" name="language" value = "Vietnamese">
+
             <div class="field-wrap">
               Email Address <br>
               <input type="email" placeholder= "Enter email" name="email" required>
             </div>
             <div class="field-wrap">
               Password <br>
-              <input type="password" placeholder="Enter password" name="pwd" required>
+              <input type="password" placeholder="Enter password" name="password" required>
             </div>
-            <button type="submit" class="button button-block"/>Get Started</button>
+            <button type="submit" class="button button-block"/>Log In</button>
           </form>
         </div>
         <div id="login">
+          
         </div>
         </div><!-- tab-content -->
         </div> <!-- /form -->
@@ -111,13 +95,13 @@
           <div class="container">
             <div class="row text-center">
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <h4> <strong><a href="aboutus-vietnamese.html"> Về Luatsu.tech </a></strong> </h3>
+                <h4> <strong><a href="aboutus.html"> About Luatsu.tech </a></strong> </h3>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <h4> <strong>Support your lawyer</strong> </h3>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <h4> <strong>Liên hệ</strong> </h3>
+                <h4> <strong>Contact Us</strong> </h3>
               </div>
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
