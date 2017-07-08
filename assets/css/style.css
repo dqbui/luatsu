@@ -1,13 +1,4 @@
-﻿input[type=text] {
-	width: 400px;
-	-webkit-transition: width 0.4s ease-in-out; 
-	transition: width 0.4s ease-in-out; 
-} 
-
-input [type=text]:focus { 
-	width: 100%; 
-} 
-
+﻿
 body {
     font-family: 'Open Sans', sans-serif;
     font-size:20px;
@@ -523,11 +514,15 @@ label.highlight {
   color: #ffffff;
 }
 
+input.placeholder {
+    text-align: center;
+}
+
 input, textarea {
   font-size: 22px;
   display: block;
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
   padding: 5px 10px;
   background: none;
   background-image: none;
@@ -537,10 +532,10 @@ input, textarea {
   -webkit-transition: border-color .25s ease, box-shadow .25s ease;
   transition: border-color .25s ease, box-shadow .25s ease;
 }
-input:focus, textarea:focus {
+/*input:focus, textarea:focus {
   outline: 0;
   border-color: #1ab188;
-}
+}*/
 
 label {
       display: inline-block;
@@ -615,10 +610,10 @@ input[type=checkbox]
     transition: width 0.4s ease-in-out;
 }
 
-/* When the input field gets focus, change its width to 100% */
-input[type=text]:focus {
-    width: 100%;
-}
+ /*When the input field gets focus, change its width to 100% */
+  input[type=text]:focus {
+      width: 100%;
+  }
 
 
 /* Profile container */
