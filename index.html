@@ -16,6 +16,7 @@
     <link href="assets/css/flexslider.css" rel="stylesheet" />
     <!-- CUSTOM STYLE  -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
     <!-- GOOGLE FONTS  -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css' />
@@ -134,10 +135,20 @@
           <hr />
         </div>
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-        <br></br>
-        <a class="btn btn-info btn-lg">Get Started</a>
+          <br></br>
+          <a class="btn btn-info btn-lg">Get Started</a>
+        </div>
       </div>
     </div>
+    <input type="button" id="show_login" value="Show Login">
+    <div id = "loginform">
+      <form method = "post" action = "">
+        <p>Join TalkersCode And get Quick Access To Our Tutorials,Questions,Web Tricks And Many More</p>
+        <input type = "image" id = "close_login" src = "images/close.png">
+        <input type = "text" id = "login" placeholder = "Email Id" name = "uid">
+        <input type = "password" id = "password" name = "upass" placeholder = "***">
+        <input type = "submit" id = "dologin" value = "Login">
+      </form>
     </div>
     <!-- TAG HOME SECTION END-->
     <div class="container">
