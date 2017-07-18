@@ -837,3 +837,8 @@ input[type=checkbox]
   background-size:cover;
   max-height:100%;
 }
+
+.category-title {
+  /*padding-left: 100px;*/
+  text-align: center; 
+}
