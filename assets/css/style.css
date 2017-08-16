@@ -853,7 +853,9 @@ left:0;
 display:none;
 position:fixed;
 background-color:#000;
-overflow:auto
+overflow:auto;
+z-index: 1;
+/*position: absolute;*/
 }
 
 img#close {
