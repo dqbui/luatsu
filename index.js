@@ -1,11 +1,17 @@
 //Function To Display Popup
 function div_show() {
 	document.getElementById('background_layer').style.display = "block";
+	document.getElementById('slide').style.display = "none";
+	document.getElementById('slide1').style.display = "none";
+	document.getElementById('slide2').style.display = "none";
+	document.getElementById('slide3').style.display = "none"
+
 }
 
 //Function to Hide Popup
 function div_hide() {
 	document.getElementById('background_layer').style.display = "none";
+
 }
 
 $(document).ready(function() {
