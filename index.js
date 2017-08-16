@@ -1,17 +1,12 @@
-console.log('test');
-
 //Function To Display Popup
-
 function div_show() {
-	console.log('test2');
 	document.getElementById('background_layer').style.display = "block";
 }
 
 //Function to Hide Popup
-	function div_hide() {
-		document.getElementById('background_layer').style.display = "none";
-	}
-
+function div_hide() {
+	document.getElementById('background_layer').style.display = "none";
+}
 
 $(document).ready(function() {
 	//YOUR JQUERY CODE
@@ -63,6 +58,6 @@ $(document).ready(function() {
 	// 		alert("Form Submitted Successfully...");
 	// 	}
 	// }
-	
-	
+
+
 });

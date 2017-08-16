@@ -919,10 +919,10 @@ font-family:raleway;
 margin-bottom:30px
 }
 
-span {
+/*span {
 color:red;
 font-weight:700
-}
+}*/
 
 #send_question_button {
 width:10%;
@@ -976,7 +976,7 @@ select {
   transition: all 0.3s ease;
 }
 
-span {
+#close_icon  {
     position:absolute;
     right:10px;
     top:5px;
