@@ -36,8 +36,10 @@ if(isset($_POST["language"])) {
         $msg = str_replace(" ", "+", "account successfully created aaaa");
         // header("Location: {$home_page}?msg={$msg}");
         echo "<script type=\"text/javascript\">".
-        "alert('success');".
+        "alert('Registration Success');".
+        "window.location.href=index.html".
         "</script>";
+
       } else {
         $msg = str_replace(" ", "+", "invalid email username combo");
         header("Location: {$login_page}?msg={$msg}");
