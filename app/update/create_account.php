@@ -33,14 +33,8 @@ if(isset($_POST["language"])) {
       $user->createAccount();
       $user->login();
       if ($user->isLoggedIn()) {
-        $msg = str_replace(" ", "+", "account successfully created aaaa");
-        // header("Location: {$home_page}?msg={$msg}");
-        // echo "<script type=\"text/javascript\">".
-        // "alert('Registration Success');".
-        // "window.location.href=index.html".
-        // "</script>";
-
-         echo '<script type="application/javascript">alert("Registered"); window.location.href = "'.$home_page.'";</script>';
+        $msg = str_replace(" ", "+", "account successfully created");
+        echo '<script type="application/javascript">alert("Registered"); window.location.href = "'.$home_page.'";</script>';
 
       } else {
         $msg = str_replace(" ", "+", "invalid email username combo");
