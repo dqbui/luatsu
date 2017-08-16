@@ -1,3 +1,18 @@
+console.log('test');
+
+//Function To Display Popup
+
+function div_show() {
+	console.log('test2');
+	document.getElementById('background_layer').style.display = "block";
+}
+
+//Function to Hide Popup
+	function div_hide() {
+		document.getElementById('background_layer').style.display = "none";
+	}
+
+
 $(document).ready(function() {
 	//YOUR JQUERY CODE
 
@@ -40,4 +55,14 @@ $(document).ready(function() {
 	$(window).resize();
 
 
+	// function check_empty() {
+	// 	if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+	// 		alert("Fill All Fields !");
+	// 	} else {
+	// 		document.getElementById('form').submit();
+	// 		alert("Form Submitted Successfully...");
+	// 	}
+	// }
+	
+	
 });

@@ -80,15 +80,10 @@
         </div>
         <div class="container" id="searchForm">
           <div class="row">
-            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-              <br> </br>
-              <input type="text" align="middle" placeholder="Type in your question.." style="text-align: center">
-              <br> </br>
-              <hr />
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-              <br></br>
-              <a class="btn btn-info btn-lg">Get Started</a>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              
+              <a class="btn btn-info btn-lg" style="width:1000px" onclick="div_show()">GET STARTED</a>
+              
             </div>
           </div>
         </div>
@@ -138,6 +133,36 @@
           </div>
         </div>
       </div>
+    </div>
+    <div id="background_layer">
+      <!-- Popup Div Starts Here -->
+      <div id="popupContact">
+        <!-- Contact Us Form -->
+        <form action="#" id="form" method="post" name="form">
+          <!-- <img id="close" onclick ="div_hide()"> -->
+          <button type="button" class="close" onclick="div_hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
+          <h2 id="form_title">Send Your Question</h2>
+          <hr>
+          <select id="send_question_dropdown">
+            <option selected disabled class="value">Select Category</option>
+            <option value="business" class="value">Business</option>
+            <option value="social_security" class="value">Social Security</option>
+            <option value="family" class="value">Family</option>
+            <option value="debt_bankruptcy" class="value">Debt and Bankruptcy</option>
+            <option value="criminal_defense" class="value">Criminal Defense</option>
+            <option value="employment_labor" class="value">Employment and Labor</option>
+            <option value="real_estate" class="value">Real Estate</option>
+            <option value="inheritance" class="value">Inheritance</option>
+            <option value="administration" class="value">Administration</option>
+          </select>
+          <input id="question_subject" placeholder="Question subject" type="text">
+          <textarea id="question_content" placeholder="Type in your question" type="text"></textarea>
+          <a id="send_question_button" href="javascript:%20check_empty()">Send</a>
+        </form>
+      </div>
+      <!-- Popup Div Ends Here -->
     </div>
     <!-- BELOW SLIDESHOW SECTION END-->
     <!-- TAG HOME SECTION END-->
@@ -312,7 +337,6 @@
         </div>
       </div>
       
-
       <!--FOOTER SECTION END-->
       <!-- WE PUT SCRIPTS AT THE END TO LOAD PAGE FASTER-->
       <!--CORE SCRIPTS PLUGIN-->
