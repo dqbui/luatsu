@@ -33,11 +33,11 @@ if(isset($_POST["language"])) {
       $user->createAccount();
       $user->login();
       if ($user->isLoggedIn()) {
-        $msg = str_replace(" ", "+", "account successfully created");
-       echo "<script type=\"text/javascript\">".
+        $msg = str_replace(" ", "+", "account successfully created aaaa");
+        // header("Location: {$home_page}?msg={$msg}");
+        echo "<script type=\"text/javascript\">".
         "alert('success');".
         "</script>";
-        header("Location: {$home_page}?msg={$msg}");
       } else {
         $msg = str_replace(" ", "+", "invalid email username combo");
         header("Location: {$login_page}?msg={$msg}");
