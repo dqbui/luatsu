@@ -49,11 +49,11 @@
                 <li>
                  <?php 
                   session_start();
-                  if($_SESSION['logged']==true){ 
+                  if ($_SESSION['logged']==true){ 
                     echo '<a href="logout.php"><span>' + $_SESSION["username"] + ' (Logout)</span></a></li>';
-                  }
-                    elseif($_SESSION['logged']==false) 
+                  } elseif ($_SESSION['logged']==false) {
                     echo '<a href="login.html"><span>Login/Register</span></a></li>';
+                  }
                   ?>
               </ul>
             </div>
