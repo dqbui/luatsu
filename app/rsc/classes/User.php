@@ -301,7 +301,7 @@ class User {
     if($this->accountExists()) {
       $_SESSION["id"] = $this->id;
       $_SESSION["email"] = $this->email;
-      echo '<script type="application/javascript">alert("Logged In"); window.location.href = "'.$
+      echo '<script type="application/javascript">alert("Logged In"); window.location.href = "'.$ home_page.'";</script>';
     }
   }//login
 
