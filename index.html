@@ -51,12 +51,10 @@
                   if($_SESSION['logged']==true)
                     { 
                       echo $_SESSION["username"];
-                      echo '<a href="logout.php"><span>Logout</span></a></li>';
+                      echo '<a href="login.html"><span>Logout</span></a></li>';
+                    } elseif($_SESSION['logged']==false) {
+                      echo '<a href="login.html"><span>Login</span></a></li>';
                     }
-                  elseif($_SESSION['logged']==false)
-                  {
-                  echo '<a href="login.html"><span>Login/Register</span></a></li>';
-                  }
                 ?>
               </ul>
             </div>
