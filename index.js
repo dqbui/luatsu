@@ -14,6 +14,8 @@ function div_hide() {
 
 }
 
+
+
 $(document).ready(function() {
 	//YOUR JQUERY CODE
 
