@@ -47,14 +47,17 @@
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="signup.html">SIGN UP</a></li>
                 <li>
-                 <?php 
-                  session_start();
-                  if ($_SESSION['logged']==true){ 
-                    echo '<a href="login.html"><span>Log Out</span></a></li>';
-                  } else {
-                    echo '<a href="login.html"><span>Log In</span></a></li>';
+                  <?php 
+                  if($_SESSION['logged']==true)
+                    { 
+                      echo $_SESSION["username"];
+                      echo '<a href="logout.php"><span>Logout</span></a></li>';
+                    }
+                  elseif($_SESSION['logged']==false)
+                  {
+                  echo '<a href="login.html"><span>Login/Register</span></a></li>';
                   }
-                  ?>
+                ?>
               </ul>
             </div>
           </div>
