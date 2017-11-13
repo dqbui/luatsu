@@ -24,6 +24,7 @@ if(isset($_POST["language"])) {
     $user->login();
     if($user->isLoggedIn()) {
       header("Location: {$home_page}?msg={$_POST["email"]}");
+      echo '<a href="logout.php"><span>Logout</span></a></li>';
     } else {
       $msg = "invalid+email+username+combo";
       header("Location: {$login_page}?msg={$msg}");
