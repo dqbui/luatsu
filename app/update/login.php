@@ -23,8 +23,10 @@ if(isset($_POST["language"])) {
     $user->setPassword($_POST["password"]);
     $user->login();
     if($user->isLoggedIn()) {
+      $_SESSION['logged']== true;
       header("Location: {$home_page}?msg={$_POST["email"]}");
     } else {
+      $_SESSION['logged']== false;
       $msg = "invalid+email+username+combo";
       header("Location: {$login_page}?msg={$msg}");
     }
