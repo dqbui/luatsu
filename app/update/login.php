@@ -24,6 +24,7 @@ if(isset($_POST["language"])) {
     $user->login();
     if($user->isLoggedIn()) {
       $_SESSION['logged']== true;
+      
       header("Location: {$home_page}?msg={$_POST["email"]}");
     } else {
       $_SESSION['logged']== false;
