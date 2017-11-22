@@ -24,36 +24,69 @@
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
   </head>
   <body>
-    <section>
-      <div class="container">
-        <div class="col-sm-12">
-          <ul id="language-option" class="nav navbar-nav navbar-right">
-            <li id="english"><a href="index.html">English</a></li>
-            <li id="vietnamese"><a href="index-vn.html">Vietnamese</a></li>
-          </ul>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-header">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <img src="assets/img/logonew.png" alt="logo" style="width:200px;height:70px;">
         </div>
-      </div>
-    </section>
-    <section class="menu-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="navbar-collapse collapse">
-              <img src="assets/img/logonew.png" alt="logo" style="width:200px;height:70px;">
-              <ul id="menu-top" class="nav navbar-nav navbar-right">
-                <li><a href="index.html" class="menu-top-active" >HOME</a></li>
-                <li><a href="instruction.html" >HOW IT WORKS</a></li>
-                <li><a href="lawyer_profile.html">LAWYER DIRECTORY</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-                <li><a href="signup.html">SIGN UP</a></li>
-                <li><a href="login.html">LOG IN</a></li>
-               
-              </ul>
+        
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="collapse navbar-collapse" id = "menu-header">
+                <ul id="menu-top" class="nav navbar-nav navbar-right">
+                  <li><a href="index.html" >HOME</a></li>
+                  <li><a href="instruction.html" >HOW IT WORKS</a></li>
+                  <li><a href="lawyer_profile.html">LAWYER DIRECTORY</a></li>
+                  <li><a href="blog.html">BLOG</a></li>
+                  <li><a href="signup.html"> <span class="glyphicon glyphicon-user"></span> SIGN UP</a></li>
+                  <li><a href="login.html"> <span class="glyphicon glyphicon-log-in"></span> LOG IN</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">LANGUAGE<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index-vn.html">Vietnamese</a></li>
+                      <li><a href="index.html">English</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </nav>
+    
+    
+    <!-- <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div> -->
+    
+    
+    
+    
     <!-- MENU SECTION END-->
     <div id="slideshow-sec">
       <div id="carousel-div" class="carousel slide" data-ride="carousel">
@@ -62,7 +95,7 @@
             <img src="assets/img/1.jpg" alt="" />
             <div class="carousel-caption">
               <h1 class="wow slideInLeft" id="slide" data-wow-duration="2s"> Chọn chủ đề pháp lí</h1>
-               <h2 class="wow slideInRight" id="slide1" data-wow-duration="2s" >Gửi câu hỏi/vụ việc miễn phí</h2>
+              <h2 class="wow slideInRight" id="slide1" data-wow-duration="2s" >Gửi câu hỏi/vụ việc miễn phí</h2>
             </div>
           </div>
           <div class="item">
@@ -183,7 +216,7 @@
             <img src="assets/img/land.jpg" alt="landlaw-logo" />
             <h4 align="center"> <strong> Đất Đai </strong></h4>
             <p>
-              Tranh chấp đất đai giữa dân và dân, dân và chính quyền; thủ tục và giấy tờ sở hữu đất, sử dụng đất và sổ đỏ  
+              Tranh chấp đất đai giữa dân và dân, dân và chính quyền; thủ tục và giấy tờ sở hữu đất, sử dụng đất và sổ đỏ
             </p>
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -198,7 +231,7 @@
             <img src="assets/img/familylaw.jpg" alt="business-law-logo">
             <h4 align="center"> <strong>Hôn Nhân và Gia Đình</strong></h4>
             <p>
-              Thủ tục kết hôn, li hôn; quyền nuôi con và chia sẻ tài sản trong li hôn 
+              Thủ tục kết hôn, li hôn; quyền nuôi con và chia sẻ tài sản trong li hôn
             </p>
             <br />
             <div class="row">
@@ -214,7 +247,7 @@
             <img src="assets/img/businesslaw.jpg" alt="marriage-law-logo" />
             <h4 align="center"> <strong> Kinh Doanh </strong></h4>
             <p>
-              Thủ tục đăng ký, thành lập và giải tỏa doanh nghiệp; pháp chế và hợp đồng doanh nghiệp 
+              Thủ tục đăng ký, thành lập và giải tỏa doanh nghiệp; pháp chế và hợp đồng doanh nghiệp
             </p>
             <br />
             <div class="row">
@@ -232,7 +265,7 @@
             <img src="assets/img/publicadminlaw.jpg" alt="publicadmin-law-logo" />
             <h4 align="center"> <strong>Hành chính</strong></h4>
             <p>
-              Các thủ tục hành chính của giấy tờ thường dụng như giấy khai sinh, trích lục khai sinh, chứng minh thư/căn cước, v.v. 
+              Các thủ tục hành chính của giấy tờ thường dụng như giấy khai sinh, trích lục khai sinh, chứng minh thư/căn cước, v.v.
             </p>
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -247,7 +280,7 @@
             <img src="assets/img/dansulaw.jpg" alt="civil-law-logo"/>
             <h4 align="center"> <strong>Dân Sự</strong></h4>
             <p>
-              Các vấn đề tranh chấp tài sản hoặc tranh chấp phi tài sản giữa các cá nhân, tổ chức 
+              Các vấn đề tranh chấp tài sản hoặc tranh chấp phi tài sản giữa các cá nhân, tổ chức
             </p>
             <br />
             <div class="row">
@@ -264,7 +297,7 @@
             <img src="assets/img/laborlaw.jpg" alt="labor-law-logo"/>
             <h4 align="center"> <strong>Lao Động</strong></h4>
             <p>
-              Lương, thời hạn/hợp đồng lao động và nhân quyền trong lao động 
+              Lương, thời hạn/hợp đồng lao động và nhân quyền trong lao động
             </p>
             <br />
             <div class="row">
