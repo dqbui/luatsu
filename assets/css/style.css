@@ -91,7 +91,7 @@ a.vietnamese {
 }
 
 .navbar-inverse .navbar-nav li a:hover {
-  background-color: #444444;
+  background-color: #D3D3D3;
   transition: 0.7s all linear;
   height: 100%;
 }
