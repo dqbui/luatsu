@@ -23,6 +23,32 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
+  
+      <!-- Start of Async Drift Code -->
+  <script>
+  !function() {
+    var t;
+    if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+    t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n;
+        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e, n, o, i;
+      e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+      n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+    });
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('n3fkdsik6yt3');
+  </script>
+  <!-- End of Async Drift Code -->
+
   </head>
   <body>
     <nav class="navbar navbar-inverse">
@@ -33,7 +59,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <img src="assets/img/logonew.png" alt="logo" style="width:200px;height:70px;">
+          
         </div>
         
         
@@ -41,13 +67,14 @@
           <div class="row">
             <div class="col-md-12">
               <div class="collapse navbar-collapse" id = "menu-header">
+              <img src="assets/img/logonew.png" alt="logo" style="width:200px;height:70px;">
                 <ul id="menu-top" class="nav navbar-nav navbar-right">
-                  <li><a href="index.html" >HOME</a></li>
-                  <li><a href="instruction.html" >HOW IT WORKS</a></li>
-                  <li><a href="lawyer_profile.html">LAWYER DIRECTORY</a></li>
+                  <li><a href="index.html" >Trang chủ</a></li>
+                  <li><a href="instruction.html" >Hướng dẫn</a></li>
+                  <li><a href="lawyer_profile.html">Danh bạ luật sư</a></li>
                   <li><a href="blog.html">BLOG</a></li>
-                  <li><a href="signup.html"> <span class="glyphicon glyphicon-user"></span> SIGN UP</a></li>
-                  <li><a href="login.html"> <span class="glyphicon glyphicon-log-in"></span> LOG IN</a></li>
+                  <li><a href="signup.html"> <span class="glyphicon glyphicon-user"></span>Đăng ký</a></li>
+                  <li><a href="login.html"> <span class="glyphicon glyphicon-log-in"></span>Đăng nhập</a></li>
                   <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">LANGUAGE<span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -71,7 +98,7 @@
       </div>
     </div>
     <!-- BELOW SLIDESHOW SECTION END-->
-    <h3 style="color:#0d2158;" align="center">Welcome back!</h3>
+    <h3 style="color:#0d2158;" align="center">Chào mừng bạn đã quay trở lại!</h3>
     <div class="form">
       <div class="tab-content">
         <div id="signup">
@@ -84,14 +111,14 @@
           <form action="/app/update/login.php" method="post">
             <input type="hidden" name="language" value = "English">
             <div class="field-wrap">
-              Email Address <br>
+              Email<br>
               <input type="email" placeholder= "Enter email" name="email" required>
             </div>
             <div class="field-wrap">
-              Password <br>
+              Mật khẩu<br>
               <input type="password" placeholder="Enter password" name="password" required>
             </div>
-            <button type="submit" class="button button-block" id="logIn" />Log In</button>
+            <button type="submit" class="button button-block" id="logIn" />Đăng nhập</button>
           </form>
         </div>
         <div id="login">
@@ -103,13 +130,13 @@
           <div class="container">
             <div class="row text-center">
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <h4> <strong><a href="aboutus.html"> About Luatsu.tech </a></strong> </h3>
+                <h4> <strong><a href="aboutus.html">Về Luatsu.tech </a></strong> </h3>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <h4> <strong>Support your lawyer</strong> </h3>
+                <h4> <strong>Ủng hộ luật sư</strong> </h3>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <h4> <strong>Contact Us</strong> </h3>
+                <h4> <strong>Liên hệ với chúng tôi</strong> </h3>
               </div>
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
