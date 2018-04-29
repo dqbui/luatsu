@@ -241,7 +241,9 @@ border: 1px solid black;
     .below-slideshow p {
         padding-right:30px;
     }
-
+    .below-slideshow img {
+        margin-left: 35%;
+    }
 
 .word-content {
     color:black;
