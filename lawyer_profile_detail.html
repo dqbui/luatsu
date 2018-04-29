@@ -23,6 +23,33 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
+  
+  <!-- Start of Async Drift Code -->
+  <script>
+  !function() {
+    var t;
+    if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+    t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n;
+        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e, n, o, i;
+      e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+      n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+    });
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('n3fkdsik6yt3');
+  </script>
+  <!-- End of Async Drift Code -->
+
+
   </head>
   <body>
     <!-- LOGO HEADER END-->
@@ -34,7 +61,6 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <img src="assets/img/logonew.png" alt="logo" style="width:200px;height:70px;">
         </div>
         
         
@@ -42,21 +68,14 @@
           <div class="row">
             <div class="col-md-12">
               <div class="collapse navbar-collapse" id = "menu-header">
+                <img src="assets/img/logonew.png" alt="logo" style="width:200px;height:70px;">
                 <ul id="menu-top" class="nav navbar-nav navbar-right">
-                  <li><a href="index.html" >HOME</a></li>
-                  <li><a href="instruction.html" >HOW IT WORKS</a></li>
-                  <li><a href="lawyer_profile.html">LAWYER DIRECTORY</a></li>
+                  <li><a href="index.html" >Trang chủ</a></li>
+                  <li><a href="instruction.html" >Hướng dẫn</a></li>
+                  <li><a href="lawyer_profile.html">Danh bạ luật sư</a></li>
                   <li><a href="blog.html">BLOG</a></li>
-                  <li><a href="signup.html"> <span class="glyphicon glyphicon-user"></span> SIGN UP</a></li>
-                  <li><a href="login.html"> <span class="glyphicon glyphicon-log-in"></span> LOG IN</a></li>
-                  <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">LANGUAGE<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="index-vn.html">Vietnamese</a></li>
-                      <li><a href="index.html">English</a></li>
-                    </ul>
-                  </li>
-                  
+                  <li><a href="signup.html"> <span class="glyphicon glyphicon-user"></span>Đăng ký</a></li>
+                  <li><a href="login.html"> <span class="glyphicon glyphicon-log-in"></span>Đăng nhập</a></li>
                 </ul>
               </div>
             </div>
@@ -76,23 +95,23 @@
           <div class="profile-sidebar">
             <!-- SIDEBAR USERPIC -->
             <div class="profile-userpic">
-              <img src="http://www.bblawoffice.com/wp-content/uploads/2017/01/Lawyer-Selection.jpg" class="img-responsive" alt="">
+              <img src="assets/img/hangvuong.jpg">
             </div>
             <!-- END SIDEBAR USERPIC -->
             <!-- SIDEBAR USER TITLE -->
             <div class="profile-usertitle">
               <div class="profile-usertitle-name">
-                <strong>Marcus Doe</strong>
+                <strong>Vương Hằng</strong>
               </div>
               <div class="profile-usertitle-job">
-                <strong>Real Estate Lawyer</strong>
+                <strong>Luật sư bản quyển và sở hữu trí tuệ</strong>
               </div>
             </div>
             <!-- END SIDEBAR USER TITLE -->
             <!-- SIDEBAR BUTTONS -->
             <div class="profile-userbuttons">
-              <button type="button" class="btn btn-success btn-sm">Support</button>
-              <button type="button" class="btn btn-danger btn-sm">Message</button>
+              <button type="button" class="btn btn-success btn-sm">Ủng hộ luật sư</button>
+              <button type="button" class="btn btn-danger btn-sm"><a href="https://www.facebook.com/ipvc.com.vn/" target="_blank">Nhắn tin</a></button>
             </div>
             <!-- END SIDEBAR BUTTONS -->
             <!-- SIDEBAR MENU -->
@@ -102,43 +121,35 @@
         <div class="col-md-9">
           <div class="profile-content">
             <center>
-            <p class="text-left"><strong>BIOGRAPHY </strong><br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+            <p class="text-left"><strong>Giới thiệu</strong><br>
+            Luật sư Vương Hằng đã có nhiều kinh nghiệm trong lĩnh vực bản quyền/sở hữu trí tuệ. Luật sư Hằng hiện là Giám đốc điều hành và người sáng lập văn phòng luật IPVC, chuyên cung cấp dịch vụ: đăng ký bản quyền, đăng ký nhãn hiệu tại Việt Nam/nước ngoài, đăng ký bảo hộ sáng chế/kiểu dáng, tư vấn xử lý vi phạm bản quyền, tư vấn nhượng quyền công nghệ và tư vấn thành lập doanh nghiệp.</p>
             <br>
             </center>
             <div class=" col-md-9 col-lg-9 ">
               <table class="table table-user-information">
                 <tbody>
                   <tr>
-                    <td>Department:</td>
-                    <td>Real Estate</td>
+                    <td>Tên văn phòng:</td>
+                    <td>IPVC</td>
                   </tr>
                   <tr>
-                    <td>Hire date:</td>
-                    <td>06/23/2013</td>
+                    <td>Địa chỉ:</td>
+                    <td>Số 6A, đường Vân Hồ 3, quận Hai Bà Trưng, Hà Nội</td>
                   </tr>
                   <tr>
-                    <td>Date of Birth</td>
-                    <td>01/24/1988</td>
+                    <td>Số điện thoại liên hệ:</td>
+                    <td>0438217468</td>
                   </tr>
                   
                   <tr>
                     <tr>
-                      <td>Gender</td>
-                      <td>Male</td>
+                      <td>Địa chỉ email liên hệ:</td>
+                      <td>hangvuong@ipvc.com.vn</td>
                     </tr>
                     <tr>
-                      <td>Home Address</td>
-                      <td>Grinnell, IA</td>
-                    </tr>
-                    <tr>
-                      <td>Email</td>
-                      <td><a href="mailto:info@support.com">info@support.com</a></td>
-                    </tr>
-                    <td>Phone Number</td>
-                    <td>123-4567-890(Landline)<br><br>555-4567-890(Mobile)
-                    </td>
-                    
+                      <td>Website văn phòng:</td>
+                      <td><a href="https://ipvc.com.vn/ve-chung-toi" target="_blank">Văn phòng IPVC</a></td>
+                    </tr>                    
                   </tr>
                   
                 </tbody>
@@ -152,7 +163,7 @@
                 <div class="row">
                   <div class="col-sm-3">
                     <div class="rating-block">
-                      <h4>Average user rating</h4>
+                      <h4>Đánh giá trung bình của khách hàng</h4>
                       <h2 class="bold padding-bottom-7">4.3 <small>/ 5</small></h2>
                       <button type="button" class="btn btn-warning btn-sm" aria-label="Left Align">
                       <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -172,7 +183,7 @@
                     </div>
                   </div>
                   <div class="col-sm-3">
-                    <h4>Rating breakdown</h4>
+                    <h4>Phân tích chi tiết</h4>
                     <div class="pull-left">
                       <div class="pull-left" style="width:35px; line-height:1;">
                         <div style="height:9px; margin:5px 0;">5</div>
@@ -248,8 +259,8 @@
                       <div class="row">
                         <div class="col-sm-3">
                           <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded">
-                          <div class="review-block-name"><a href="#">nktailor</a></div>
-                          <div class="review-block-date">January 29, 2016<br/>1 day ago</div>
+                          <div class="review-block-name"><a href="https://www.facebook.com/pg/ipvc.com.vn/reviews/" target="_blank">Trần Trung Kiên</a></div>
+                          <div class="review-block-date">16 tháng 3, 2018<br/></div>
                         </div>
                         <div class="col-sm-9">
                           <div class="review-block-rate">
@@ -269,16 +280,16 @@
                             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                             </button>
                           </div>
-                          <div class="review-block-title">this was nice in buy</div>
-                          <div class="review-block-description">this was nice in buy. this was nice in buy. this was nice in buy. this was nice in buy this was nice in buy this was nice in buy this was nice in buy this was nice in buy</div>
+                          <div class="review-block-title">Tư vấn nhiệt tình</div>
+                          <div class="review-block-description">Luật sư tư vấn khá nhiệu tình; mình đã nhờ luật sư tư vấn nhiều lần về vấn đề đăng ký bản quyền và khá hài lòng với chất lượng.</div>
                         </div>
                       </div>
                       <hr/>
                       <div class="row">
                         <div class="col-sm-3">
                           <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded">
-                          <div class="review-block-name"><a href="#">nktailor</a></div>
-                          <div class="review-block-date">January 29, 2016<br/>1 day ago</div>
+                          <div class="review-block-name"><a href="#">Trương Thanh Tùng</a></div>
+                          <div class="review-block-date">16 tháng 3, 2018<br/></div>
                         </div>
                         <div class="col-sm-9">
                           <div class="review-block-rate">
@@ -298,16 +309,16 @@
                             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                             </button>
                           </div>
-                          <div class="review-block-title">this was nice in buy</div>
-                          <div class="review-block-description">this was nice in buy. this was nice in buy. this was nice in buy. this was nice in buy this was nice in buy this was nice in buy this was nice in buy this was nice in buy</div>
+                          <div class="review-block-title">Tư vấn ổn</div>
+                          <div class="review-block-description">Thấy luật sư này tư vấn cũng được; lần sau có vấn đề gì sẽ đến hỏi tư vấn tiếp</div>
                         </div>
                       </div>
                       <hr/>
                       <div class="row">
                         <div class="col-sm-3">
                           <img src="http://dummyimage.com/60x60/666/ffffff&text=No+Image" class="img-rounded">
-                          <div class="review-block-name"><a href="#">nktailor</a></div>
-                          <div class="review-block-date">January 29, 2016<br/>1 day ago</div>
+                          <div class="review-block-name"><a href="#">Chi Hoàng</a></div>
+                          <div class="review-block-date">3 tháng 8, 2017<br/></div>
                         </div>
                         <div class="col-sm-9">
                           <div class="review-block-rate">
@@ -327,8 +338,8 @@
                             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
                             </button>
                           </div>
-                          <div class="review-block-title">this was nice in buy</div>
-                          <div class="review-block-description">this was nice in buy. this was nice in buy. this was nice in buy. this was nice in buy this was nice in buy this was nice in buy this was nice in buy this was nice in buy</div>
+                          <div class="review-block-title">Chất lượng tuyệt vời</div>
+                          <div class="review-block-description">Chất lượng dịch vụ và sự tận tâm gắn liền với người đừng đầu tổ chức. IPVC là một công ty như vậy. Cảm ơn chị Vương Hằng.</div>
                         </div>
                       </div>
                     </div>
@@ -345,13 +356,13 @@
           <div class="container">
             <div class="row text-center">
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <h4> <strong><a href="aboutus.html"> About Luatsu.tech </a></strong> </h3>
+                <h4> <strong><a href="aboutus.html">Về Luatsu.tech </a></strong> </h3>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <h4> <strong>Support your lawyer</strong> </h3>
+                <h4> <strong>Ủng hộ luật sư</strong> </h3>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                <h4> <strong>Contact Us</strong> </h3>
+                <h4> <strong><a href="https://www.facebook.com/luatsutech-764732240373152/">Liên hệ với chúng tôi</a></strong> </h3>
               </div>
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
